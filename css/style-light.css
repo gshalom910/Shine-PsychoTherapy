@@ -1580,6 +1580,10 @@ a:hover {
     padding-bottom: 0px;
     margin-bottom: 10px;
   }
+  #footer .col-xs-6 {
+    width: 50%;
+    text-align: left;
+  }
 }
 
 footer {
