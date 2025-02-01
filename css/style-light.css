@@ -498,8 +498,8 @@ a:hover {
      [ 04 Start Header ]
 -----------------------------------------------------------------*/
 .header {
-  margin-top: 95px;
-  min-height: 70vh;
+  margin-top: 85px;
+  min-height: 110vh;
   background-image: url("/mental/Flux_Dev_A_group_of_five_Ethiopian_women_with_different_disabi_3.jpeg");
   background-position: right !important;
   background-color: #769d9c;
@@ -1678,7 +1678,7 @@ footer p {
     background-attachment: scroll !important;
     background-position: 0% 0% !important;
     padding-left: 20px !important;
-    filter: grayscale(60%);
+    filter: grayscale(40%);
   }
   .header .row .mt-50 {
     margin-top: 30px !important;
@@ -1740,14 +1740,18 @@ footer p {
   }
 }
 @media screen and (max-width: 480px) {
+  .header {
+    margin-top: 80px;
+    min-height: 65vh;
+  }
   a {
     color: #0e7370 !important;
   }
   .header .caption h2 {
-    font-size: 23px;
+    font-size: 25px;
   }
   .header .caption h1 {
-    font-size: 23px;
+    font-size: 25px;
     line-height: 1.4;
     margin-bottom: 10px !important;
   }
