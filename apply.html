@@ -27,11 +27,8 @@
   </head>
 
   <body>
-    <nav class="navbar nav-light navbar-expand-lg">
-      <a class="logo" href="index.html">
-        <img src="img/logo-light.png" alt="logo" />
-      </a>
-
+    <nav class="navbar navbar-expand-lg bg-white">
+      <a class="navbar-brand" href="#">Navbar</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -41,53 +38,53 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="icon-bar"><i class="fas fa-bars"></i></span>
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
       </button>
-      <div class="container">
-        <!-- Logo -->
 
-        <!-- navbar links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Our Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="psychologists.html">Psychologists</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="vacancy.html">Vacancy</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="bookAppointment.html"
-                >Make Appointment</a
-              >
-            </li> -->
-          </ul>
-        </div>
-      </div>
-      <div>
-        <div class="loggedOut" style="display: none">
-          <button id="signinButton"><a href="signin.html">Sign In</a></button>
-        </div>
-        <div class="logged" style="display: none">
-          <!-- <button id="displayName"></button> -->
-          <button id="logout-btn">Sign Out</button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="psychologists.html">Psychologists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vacancy.html">Vacancy</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              style="display: none; color: rgb(193, 142, 23)"
+              id="join-btn"
+              >Join Session</a
+            >
+          </li>
+        </ul>
+        <div>
+          <div class="loggedOut">
+            <button id="signinButton"><a href="signin.html">Sign In</a></button>
+          </div>
+
+          <div class="logged" style="display: none">
+            <button id="displayName"></button>
+            <button id="logout-btn"><span>Sign Out</span></button>
+          </div>
         </div>
       </div>
     </nav>
@@ -172,23 +169,126 @@
     <!-- =====================================
         ==== Start Footer -->
 
-    <footer class="text-center bg-gray position-re">
-      <div class="container">
-        <!-- Logo -->
-        <a class="logo" href="#">
-          <img src="img/logo-dark.png" alt="logo" />
-        </a>
+    <footer class="text-center position-re">
+      <section id="footer">
+        <div class="container">
+          <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <h5 style="border-left: none">SHINE</h5>
+              <ul class="list-unstyled quick-links" style="color: white">
+                <li>Addis Ababa, Ethiopia</li>
 
-        <div class="social">
-          <a href="#0"><i class="icofont icofont-social-facebook"></i></a>
-          <a href="#0"><i class="icofont icofont-social-twitter"></i></a>
-          <a href="#0"><i class="icofont icofont-social-instagram"></i></a>
-          <a href="#0"><i class="icofont icofont-brand-linkedin"></i></a>
-          <a href="#0"><i class="icofont icofont-social-behance"></i></a>
+                <li><strong>Phone:</strong> +2517 8625 8918</li>
+
+                <li><strong>Email:</strong> support@shine.com</li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <h5>Quick links</h5>
+              <ul class="list-unstyled quick-links">
+                <li>
+                  <a href="index.html"><i class="fa fa-angle-right"></i>Home</a>
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="fa fa-angle-right"></i>About US</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html"
+                    ><i class="fa fa-angle-right"></i>Our Services</a
+                  >
+                </li>
+                <li>
+                  <a href="vacancy.html"
+                    ><i class="fa fa-angle-right"></i>Vacancy</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fa fa-angle-right"></i>Contact US</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <h5>Useful links</h5>
+              <ul class="list-unstyled quick-links">
+                <li>
+                  <a href="bookAppointment.html"
+                    ><i class="fa fa-angle-right"></i>Book Session</a
+                  >
+                </li>
+                <li>
+                  <a href="psychologists.html"
+                    ><i class="fa fa-angle-right"></i>Psychologists</a
+                  >
+                </li>
+                <li>
+                  <a href="pricing.html"
+                    ><i class="fa fa-angle-right"></i>Price</a
+                  >
+                </li>
+                <li>
+                  <a href="blog.html"><i class="fa fa-angle-right"></i>Blogs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <h5>Our Services</h5>
+              <ul class="list-unstyled quick-links" style="color: white">
+                <li>One To One Therapy</li>
+                <li>Group Therapy</li>
+                <li>Skill Dev't Training</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item">
+                  <a href="#"
+                    ><i class="icofont icofont-social-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="icofont icofont-brand-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"
+                    ><i class="icofont icofont-social-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <hr />
+          </div>
+          <div class="row">
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white"
+            >
+              <p>
+                SHINE is a mental health platform offering tailored therapy
+                sessions for women with disabilities
+              </p>
+              <p class="pt-20">
+                <b
+                  >© All right Reversed.<a
+                    class="text-green ml-2"
+                    href="/"
+                    target="_blank"
+                    >SHINE</a
+                  ></b
+                >
+              </p>
+            </div>
+            <hr />
+          </div>
         </div>
-
-        <p>&copy; 2018 UI-ThemeZ. All Rights Reserved.</p>
-      </div>
+      </section>
 
       <svg
         class="wave"
