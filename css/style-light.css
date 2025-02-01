@@ -173,7 +173,7 @@ a:hover {
   position: absolute;
   /* white-space: nowrap; */
   left: 0;
-  top: 20px;
+  top: 0;
 }
 
 .cd-words-wrapper b.is-visible {
@@ -499,7 +499,7 @@ a:hover {
 -----------------------------------------------------------------*/
 .header {
   margin-top: 95px;
-  min-height: 110vh;
+  min-height: 90vh;
   background-image: url("/mental/Flux_Dev_A_group_of_five_Ethiopian_women_with_different_disabi_3.jpeg");
   background-position: right !important;
   background-color: #769d9c;
