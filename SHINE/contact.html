@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Meta, Title, and CSS Links -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900"
+      rel="stylesheet"
+    />
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="css/plugins.css" />
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="css/style-light.css" />
+  </head>
+
+  <body>
+    <nav class="navbar nav-light navbar-expand-lg">
+      <a class="logo" href="index.html">
+        <img src="img/logo-light.png" alt="logo" />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="icon-bar"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="container">
+        <!-- Logo -->
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="psychologists.html">Psychologists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vacancy.html">Vacancy</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="bookAppointment.html"
+                >Make Appointment</a
+              >
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="loggedOut" style="display: none">
+          <button id="signinButton"><a href="signin.html">Sign In</a></button>
+        </div>
+        <div class="logged" style="display: none">
+          <!-- <button id="displayName"></button> -->
+          <button id="logout-btn">Sign Out</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="contact section-padding position-re">
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-head text-center col-lg-8 offset-lg-2 col-md-10 offset-md-1"
+          >
+            <h4>Contact Us</h4>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="info mb-md50">
+              <div class="item">
+                <div class="cont">
+                  <h6>Phone :</h6>
+                  <p>+20 010 2517 8918</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="cont">
+                  <h6>Address :</h6>
+                  <p>
+                    3rd Avenue, Upper East Side,<br />
+                    San Francisco
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="cont">
+                  <h6>Email :</h6>
+                  <p>email_support@youradress.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form class="form" id="contact-form">
+              <div class="messages"></div>
+
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        id="name"
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        required="required"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        required="required"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        id="subject"
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Message"
+                        rows="4"
+                        required="required"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="butn butn-bg">
+                      <span>Send Message</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <svg
+        class="wave gray"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 1920 81.717"
+        enable-background="new 0 0 1920 81.717"
+        xml:space="preserve"
+      >
+        <path
+          d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"
+        ></path>
+      </svg>
+    </section>
+
+    <footer class="text-center bg-gray position-re">
+      <div class="container">
+        <!-- Logo -->
+        <a class="logo" href="#">
+          <img src="img/logo-dark.png" alt="logo" />
+        </a>
+
+        <div class="social">
+          <a href="#0"><i class="icofont icofont-social-facebook"></i></a>
+          <a href="#0"><i class="icofont icofont-social-twitter"></i></a>
+          <a href="#0"><i class="icofont icofont-social-instagram"></i></a>
+          <a href="#0"><i class="icofont icofont-brand-linkedin"></i></a>
+          <a href="#0"><i class="icofont icofont-social-behance"></i></a>
+        </div>
+
+        <p>&copy; 2018 UI-ThemeZ. All Rights Reserved.</p>
+      </div>
+
+      <svg
+        class="wave"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 1920 81.717"
+        enable-background="new 0 0 1920 81.717"
+        xml:space="preserve"
+      >
+        <path
+          style=""
+          d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"
+        ></path>
+      </svg>
+    </footer>
+
+    <!-- End Footer ====
+        ======================================= -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+
+    <!-- popper.min -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- scrollIt -->
+    <script src="js/scrollIt.min.js"></script>
+
+    <!-- animated.headline -->
+    <script src="js/animated.headline.js"></script>
+
+    <!-- jquery.magnific-popup js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- stellar js -->
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <!-- validator js -->
+    <script src="js/validator.js"></script>
+    <script type="module" src="nav.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="contact.js" type="module" defer></script>
+  </body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Meta, Title, and CSS Links -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900"
+      rel="stylesheet"
+    />
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="css/plugins.css" />
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="css/style-light.css" />
+    <style>
+      
+      
+      .profile {
+        display: flex;
+        background: white;
+        padding: 30px;
+        /* margin-bottom: 20px; */
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        margin: 0 auto 100px !important;
+      }
+      .profile img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 30px;
+      }
+
+      .info {
+        flex: 1;
+      }
+      .section-head h5{
+        font-size: 38px !important;
+        font-weight: bolder;
+        
+      }
+      .row .height{
+        height: 300px !important;
+      }
+       .section-head{
+margin-bottom: 30px !important;
+       }
+      .profile li{
+        margin-bottom: 10px ;
+        font-size: 16px;
+        color: #555;
+        
+      }
+      .profile li::before{
+        content: "✔"; /* Adds a square symbol before each list item */
+  color: #FF953E; /* Matches the bullet color to the text */
+  margin-right: 18px; /* Space between the bullet and the text */
+  
+  font-size: 14px; /* Adjust size of the bullet */
+      }
+      .info h2 {
+        margin: 0;
+        color: #333;
+      }
+      .info p {
+        margin: 5px 0;
+        color: #555;
+      }
+      .appointment {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        float: right;
+        background-color: #c49b66;
+      }
+      .butn:before,
+      .butn:after {
+        background: transparent !important;
+        color: white;
+      }
+      @media screen and (max-width: 767px) {
+        /* .container {
+          width: 80%;
+          margin: 120px auto;
+        } */
+        .profile {
+          flex-direction: column;
+          padding: 20px 30px;
+        }
+        .profile img {
+          width: 150px;
+          height: 150px;
+          /* border-radius: 50%; */
+          margin: 0 auto;
+        }
+        .info h2 {
+          font-size: 30px !important;
+          color: #333;
+          text-align: center;
+          margin: 15px 0;
+        }
+        /* .container {
+          width: 90%;
+        } */
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar nav-light navbar-expand-lg">
+      <a class="logo" href="index.html">
+        <img src="img/logo-light.png" alt="logo" />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="icon-bar"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="container">
+        <!-- Logo -->
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="psychologists.html">Psychologists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vacancy.html">Vacancy</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="bookAppointment.html"
+                >Make Appointment</a
+              >
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="loggedOut" style="display: none">
+          <button id="signinButton"><a href="signin.html">Sign In</a></button>
+        </div>
+        <div class="logged" style="display: none">
+          <!-- <button id="displayName"></button> -->
+          <button id="logout-btn">Sign Out</button>
+        </div>
+      </div>
+    </nav>
+
+    
+    <section class="hero section-padding position-re bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="hero-img">
+              <img src="mental/our.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="offset-lg-1 col-lg-6">
+            
+              <div class="section-head text-center col-md-12">
+                <h4>About Us</h4>
+              </div>
+              <!-- <h4>Zain Butler.</h4> -->
+               <h5 class="mb-20">Welcome to SHINE, A Mental Health Service</h5>
+              <p class="mb-10">
+                We are dedicated to providing specialized psychotherapy for women with disabilities. Based in Addis Ababa, Ethiopia, we are committed to offering a safe, inclusive, and empowering environment for women to seek the care and support they deserve.
+              </p>
+              <p class="mb-10">
+                At SHINE, we understand the unique challenges faced by women with disabilities and believe in the power of mental well-being to transform lives. Our team of experienced and compassionate therapists is trained to work with diverse conditions and tailored approaches, ensuring that each woman receives personalized care that meets her specific needs.
+              </p>
+              <p class="mb-40">
+                We aim to break the stigma surrounding mental health, provide a platform for women to share their stories, and empower them with the tools to lead fulfilling lives. Whether navigating physical, cognitive, or emotional challenges, we are here to listen, support, and guide every woman on her journey toward healing and self-discovery.
+              </p>
+
+              <a href="bookAppointment.html" class="butn butn-bg" data-scroll-nav="5">
+                <span>Book Now</span>
+              </a>
+              <!-- <a href="CV.pdf" class="butn butn-bord" target="_blank">
+                <span>Download CV</span>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg
+        class="wave"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 1920 81.717"
+        enable-background="new 0 0 1920 81.717"
+        xml:space="preserve"
+      >
+        <path
+          
+          d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"
+        ></path>
+      </svg>
+    </section>
+    <div class="bg-gray col-md-12 pb-100">
+      <div class="container"><div class="section-head col-md-12">
+        <h5>Vission</h5>
+      </div><div class="profile">
+      
+
+        <div class="info">
+          
+          <p>
+            <!-- <strong>Clinical Psychologist, Mental Health Specialist</strong> -->
+          </p>
+          
+            <ul>
+              <li>	To be the leading global platform for mental health support, helping women with disabilities achieve emotional well-being and thrive.
+</li>
+<li>	To build a world where mental health care is accessible from any geographical location, stigma-free, and equitable for women with disabilities.
+</li>
+<li>	To revolutionize psychological care through tech-driven solutions, promoting independence and resilience for women with disabilities.
+</li>
+<li>	To be a trusted partner in supporting the mental health of women with disabilities, promoting holistic well-being worldwide.
+</li>
+            </ul>
+          
+          <!-- <button
+            onclick="window.location.href = 'bookAppointment.html'"
+            class="appointment butn"
+          >
+            Book an Appointment
+          </button> -->
+        </div>
+      </div></div>
+      
+      
+
+     
+    <div class="container">
+      <div class="section-head  col-md-12">
+        <h5>Mission</h5>
+      </div>
+      <div class="profile">
+      
+
+        <div class="info">
+          
+          <p>
+            <!-- <strong>Clinical Psychologist, Mental Health Specialist</strong> -->
+          </p>
+          <p>
+            Our mission is to break barriers in mental health care across Ethiopia by providing accessible and inclusive online therapy that empowers women with disabilities. Through compassionate support and innovative technology, we celebrate Ethiopia’s diversity and promote resilience, inclusiveness, and equality.
+          </p>
+          <!-- <button
+            onclick="window.location.href = 'bookAppointment.html'"
+            class="appointment butn"
+          >
+            Book an Appointment
+          </button> -->
+        </div>
+      </div>
+
+     
+      
+      
+    </div>  
+      <div class="container">
+      <div class="section-head  col-md-12">
+        <h5>Our Values</h5>
+      </div>
+      <div class="profile">
+      
+
+        <div class="info services">
+          
+          <div class="container">
+        <div class="row">
+
+          <div class="height col-lg-4 col-md-6 ">
+            <div class="item mb-md50 bg-gray" >
+              <!-- <i class="icon icofont icofont-paint" ></i> -->
+              <h5 class="text-center pb-20" >Inclusivity</h5>
+              <p style="text-align: left;"  >
+                Creating a welcoming environment that values diversity and amplifies the voices of women with disabilities.
+              </p>
+            </div>
+          </div>
+          <div class="height col-lg-4 col-md-6 ">
+            <div class="item mb-md50 bg-gray" >
+              <!-- <i class="icon icofont icofont-paint" ></i> -->
+              <h5 class="text-center pb-20" >Empathy</h5>
+              <p style="text-align: left;"  >
+                Offering care that understands and respects the unique experiences of every individual, while providing compassionate, client-centered support.</p>
+            </div>
+          </div>
+          <div class="height col-lg-4 col-md-6 ">
+            <div class="item mb-md50 bg-gray" >
+              <!-- <i class="icon icofont icofont-paint" ></i> -->
+              <h5 class="text-center pb-20" >Empowerment</h5>
+              <p style="text-align: left;"  >
+                Equipping women with disabilities with the tools and resources they need to build resilience and thrive.</p>
+            </div>
+          </div>
+          <div class="height col-lg-4 col-md-6 ">
+            <div class="item mb-md50 bg-gray" >
+              <!-- <i class="icon icofont icofont-paint" ></i> -->
+              <h5 class="text-center pb-20" >Accessibility</h5>
+              <p style="text-align: left;"  >
+                Making mental health support available to everyone, regardless of location or ability.</p>
+            </div>
+          </div>
+
+          <div class="height col-lg-4 col-md-6 ">
+            <div class="item mb-md50 bg-gray" >
+              <!-- <i class="icon icofont icofont-paint" ></i> -->
+              <h5 class="text-center pb-20" >Integrity</h5>
+              <p style="text-align: left;"  >
+                We operate with the highest ethical standards, ensuring confidentiality, privacy, and trust in all interactions.</p>
+            </div>
+          </div>
+
+          <div class="height col-lg-4 col-md-6 ">
+            <div class="item mb-md50 bg-gray" >
+              <!-- <i class="icon icofont icofont-paint" ></i> -->
+              <h5 class="text-center pb-20" >Innovation</h5>
+              <p style="text-align: left;"  >
+                Using technology thoughtfully and ethically to continually improve and expand mental health services.</p>
+            </div>
+          </div>
+
+          <div class="height col-lg-4 col-md-6 ">
+            <div class="item mb-md50 bg-gray" >
+              <!-- <i class="icon icofont icofont-paint" ></i> -->
+              <h5 class="text-center pb-20" >Community</h5>
+              <p style="text-align: left;"  >
+                We promote a sense of belonging and supportive space where women can connect, share their stories, and find strength in each other.</p>
+            </div>
+          </div>
+          <div class="height col-lg-4 col-md-6 ">
+            <div class="item mb-md50 bg-gray" >
+              <!-- <i class="icon icofont icofont-paint" ></i> -->
+              <h5 class="text-center pb-20" >Quality</h5>
+              <p style="text-align: left;"  >
+                Ensuring high-quality, evidence-based therapy by qualified professionals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+
+     
+      
+      
+    </div>
+    
+    </div>
+    
+
+    <footer class="text-center bg-gray position-re">
+      <div class="container">
+        <!-- Logo -->
+        <a class="logo" href="#">
+          <img src="img/logo-dark.png" alt="logo" />
+        </a>
+
+        <div class="social">
+          <a href="#0"><i class="icofont icofont-social-facebook"></i></a>
+          <a href="#0"><i class="icofont icofont-social-twitter"></i></a>
+          <a href="#0"><i class="icofont icofont-social-instagram"></i></a>
+          <a href="#0"><i class="icofont icofont-brand-linkedin"></i></a>
+          <a href="#0"><i class="icofont icofont-social-behance"></i></a>
+        </div>
+
+        <p>&copy; 2018 UI-ThemeZ. All Rights Reserved.</p>
+      </div>
+
+      <svg
+        class="wave"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 1920 81.717"
+        enable-background="new 0 0 1920 81.717"
+        xml:space="preserve"
+      >
+        <path
+          style=""
+          d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"
+        ></path>
+      </svg>
+    </footer>
+
+    <!-- End Footer ====
+        ======================================= -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+
+    <!-- popper.min -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- scrollIt -->
+    <script src="js/scrollIt.min.js"></script>
+
+    <!-- animated.headline -->
+    <script src="js/animated.headline.js"></script>
+
+    <!-- jquery.magnific-popup js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- stellar js -->
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <!-- validator js -->
+    <script src="js/validator.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/scripts.js"></script>
+    <script type="module" src="nav.js"></script>
+  </body>
+</html>

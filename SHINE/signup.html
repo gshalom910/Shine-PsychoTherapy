@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f4f4f9;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        gap: 15px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff;
+      }
+      input,
+      select,
+      button {
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 100%;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      .signin-link {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      .signin-link a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .signin-link a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sign Up</h1>
+    <form id="signupForm">
+      <input type="text" id="userName" placeholder="UserName" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <label for="role">Select Role:</label>
+      <select id="role" required>
+        <option value="">-- Select Role --</option>
+        <option value="psychologist">Psychologist</option>
+        <option value="patient">Patient</option>
+      </select>
+      <div
+        id="disabilityContainer"
+        class="disability-options"
+        style="display: none"
+      >
+        <label for="disability">Type of Disability:</label>
+        <select id="disability" required>
+          <option value="">-- Select Disability --</option>
+          <option value="physical">Physical Impairment</option>
+          <option value="hearing">Hearing Impairment</option>
+          <option value="visual">Visual Impairment</option>
+          <option value="talking">Talking Impairment</option>
+        </select>
+      </div>
+      <button type="submit" id="signUp">Sign Up</button>
+
+      <!-- Sign In Link -->
+      <p class="signin-link">
+        Already have an account? <a href="signin.html">Sign In</a>
+      </p>
+    </form>
+
+    <script src="createAcc.js" type="module" defer></script>
+  </body>
+</html>
