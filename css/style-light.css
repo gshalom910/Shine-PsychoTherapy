@@ -72,9 +72,6 @@ a:hover {
   text-decoration: none;
   color: inherit;
 }
-a {
-  color: #0e7370;
-}
 
 .section-padding {
   padding: 120px 0;
@@ -1680,14 +1677,13 @@ footer p {
   .header {
     background-attachment: scroll !important;
     background-position: 0% 0% !important;
-    padding-left: 43px !important;
+    padding-left: 20px !important;
+    filter: grayscale(60%);
   }
   .header .row .mt-50 {
     margin-top: 30px !important;
   }
-  .header .bg-img {
-    filter: grayscale(60%);
-  }
+
   .header .caption h2 {
     font-size: 25px;
   }
@@ -1744,12 +1740,16 @@ footer p {
   }
 }
 @media screen and (max-width: 480px) {
+  a {
+    color: #0e7370 !important;
+  }
   .header .caption h2 {
-    font-size: 20px;
+    font-size: 23px;
   }
   .header .caption h1 {
-    font-size: 35px;
+    font-size: 23px;
     line-height: 1.4;
+    margin-bottom: 10px !important;
   }
 
   .portfolio .filtering span {
