@@ -60,7 +60,10 @@ onAuthStateChanged(auth, async (user) => {
 
       if (userData.role === "patient" && userData.sessionTrue) {
         joinBtn.style.display = "block"; // Show Join Session button
-      } else {
+      } else if (
+        userData.role === "patient" &&
+        userData.sessionTrue === false
+      ) {
         joinBtn.style.display = "none"; // Hide button
       }
     }
