@@ -24,13 +24,10 @@
     <!-- Core Style Css -->
     <link rel="stylesheet" href="css/style-light.css" />
     <style>
-      body {
-        /* font-family: "Arial", sans-serif; */
-        background-color: #f8f9fa;
-      }
       .psy {
-        margin-top: 50px;
-        margin-bottom: 200px;
+        background-color: #f8f9fa;
+        padding-top: 50px;
+        padding-bottom: 200px;
       }
       .psy .section-head {
         padding-bottom: 0px !important;
@@ -128,36 +125,37 @@
         </div>
       </div>
     </nav>
+    <section class="psy">
+      <div class="container section-padding position-re">
+        <div class="section-head">
+          <h4 class="text-center section-head">Psychologist Dashboard</h4>
+        </div>
 
-    <div class="container section-padding position-re psy">
-      <div class="section-head">
-        <h4 class="text-center section-head">Psychologist Dashboard</h4>
+        <p class="text-center pb-50">Here are your patients:</p>
+
+        <!-- Patient List Table -->
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover bg-white">
+            <thead>
+              <tr>
+                <th>Patient Name</th>
+                <th>Disability Type</th>
+                <th>Session Date</th>
+                <th>Appointment Type</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="patient-list-table"></tbody>
+          </table>
+        </div>
       </div>
-
-      <p class="text-center pb-50">Here are your patients:</p>
-
-      <!-- Patient List Table -->
-      <div class="table-responsive">
-        <table class="table table-bordered table-hover bg-white">
-          <thead>
-            <tr>
-              <th>Patient Name</th>
-              <th>Disability Type</th>
-              <th>Session Date</th>
-              <th>Appointment Type</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody id="patient-list-table"></tbody>
-        </table>
-      </div>
-    </div>
+    </section>
 
     <footer class="text-center position-re">
       <section id="footer">
         <div class="container">
           <div class="row text-center text-xs-center text-sm-left text-md-left">
-            <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="col-xs-6 col-sm-4 col-md-4">
               <h5 style="border-left: none">SHINE</h5>
               <ul class="list-unstyled quick-links" style="color: white">
                 <li>Addis Ababa, Ethiopia</li>
@@ -167,7 +165,7 @@
                 <li><strong>Email:</strong> support@shine.com</li>
               </ul>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="col-xs-6 col-sm-4 col-md-4">
               <h5>Quick links</h5>
               <ul class="list-unstyled quick-links">
                 <li>
@@ -197,7 +195,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="col-xs-6 col-sm-4 col-md-4">
               <h5>Our Services</h5>
               <ul class="list-unstyled quick-links" style="color: white">
                 <li>One To One Therapy</li>
@@ -265,7 +263,6 @@
         xml:space="preserve"
       >
         <path
-          style=""
           d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"
         ></path>
       </svg>
