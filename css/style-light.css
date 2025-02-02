@@ -123,9 +123,7 @@ a:hover {
 .full-width {
   width: 100% !important;
 }
-a {
-    color: #0e7370 !important;
-  }
+
 
 .lg-line-height {
   line-height: 1.5;
@@ -501,17 +499,35 @@ a {
      [ 04 Start Header ]
 -----------------------------------------------------------------*/
 .header {
-  margin-top: 85px;
-  min-height: 110vh;
-  background-image: url("/mental/Flux_Dev_A_group_of_five_Ethiopian_women_with_different_disabi_3.jpeg");
-  background-position: right !important;
-  background-color: #769d9c;
-  background-size: contain !important;
-  padding-left: 80px;
+  margin-top: 10px;
+  background-image: url("/mental/pixelcut-export (2).jpg");
+  min-height: 115vh;  /* Set height to full viewport height */
+  background-position: top !important;
+  background-color: #fff !important;
+  background-size: cover !important;
+
+   padding-left: 80px; /*Use percentage for better responsiveness */
+  /* animation: zoomEffect 11s infinite; */
 }
 
+
+
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
 .cd-words-wrapper b {
-  color: #f7f7f7;
+  color: #fff;
 }
 .header .butn {
   margin-top: 50px !important;
@@ -522,15 +538,22 @@ a {
 }
 
 .header .caption {
-  color: #fff;
+  color: #fff !important;
+  text-align: center !important;
+  margin-top: 0 !important;
+ 
 }
 .header .caption .o-hidden {
   display: inline-block;
 }
 .header .caption h2 {
+   color: #fff !important;
+  background-color: transparent;
+  /* z-index: 99999 !important; */
   font-size: 70px;
   font-weight: 300;
   letter-spacing: 4px;
+ 
 }
 .header .caption h1 {
   margin: 15px 0;
@@ -556,7 +579,7 @@ a {
   color: #c49b66;
 } */
 .header .caption .social a {
-  color: #0e7370;
+  color: #0e7370 !important;
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -821,7 +844,7 @@ a {
 .services .item {
   /* text-align: center; */
   /* padding: 50px 20px; */
-   background-color:hsl(0, 0%, 90%) !important;
+   background-color:#fff !important;
   padding-bottom: 40px;
   z-index: 99999;
   box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.2);
@@ -1075,6 +1098,7 @@ a {
   background-color: #769d9c;
   background-size: 48% !important;
   padding-left: 80px;
+  
 }
 
 .half-header .caption a {
@@ -1835,7 +1859,13 @@ footer p {
   .portfolio .items {
     width: 100%;
   }
+  .color{
+    
+    color: #0e7370 !important;
+  
+  } 
 }
+
 
 @media screen and (max-width: 480px) {
   .posts .post-img img{
@@ -1847,6 +1877,7 @@ footer p {
   .header {
     margin-top: 80px;
     min-height: 65vh;
+    background-size: contain !important;
     
   }
   .main{
