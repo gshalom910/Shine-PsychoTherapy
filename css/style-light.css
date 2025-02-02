@@ -1876,8 +1876,8 @@ footer p {
   }
   .header {
     margin-top: 80px;
-    min-height: 65vh;
-    background-size: contain !important;
+    min-height: 70vh;
+    background-size: cover !important;
     
   }
   .main{
