@@ -123,6 +123,9 @@ a:hover {
 .full-width {
   width: 100% !important;
 }
+a {
+    color: #0e7370 !important;
+  }
 
 .lg-line-height {
   line-height: 1.5;
@@ -593,6 +596,9 @@ a:hover {
 /* ----------------------------------------------------------------
      [ 05 Start Hero ]
 -----------------------------------------------------------------*/
+/* .hero .ab {
+  display: none;
+} */
 .about .skills {
   padding: 100px 0;
 }
@@ -813,17 +819,40 @@ a:hover {
      [ 06 Start Services ]
 -----------------------------------------------------------------*/
 .services .item {
-  text-align: center;
-  padding: 50px 20px;
-  background: #fff;
+  /* text-align: center; */
+  /* padding: 50px 20px; */
+   background-color: #ffffff !important;
+  padding-bottom: 40px;
+  z-index: 99999;
+  box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.2);
+  border-radius: 10% 10% ;
+  height: 280px !important;/
 }
-.services .item:hover .icon {
+.services .item img {
+  height: 200px !important;
+  margin: 0 0 20px !important;
+  border-radius: 10%;
+}
+.services .more {
+  float: right;
+  color: #118f8a;
+  font-size: 25px;
+}
+.services .more a {
+  border-bottom: 3px solid #dfa862;
+}
+.blog img {
+  border-radius: 10% 10% 0 0;
+}
+/* .services .item:hover .icon {
   color: #fff;
-}
-.services .item:hover .icon:after {
-  background: #c49b66;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
+} */
+.services .item:hover .services img:after {
+  /* background: #c49b66; */
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: 3;
+  -webkit-transform: scale(20);
 }
 .services .item .icon {
   display: inline-block;
@@ -853,13 +882,27 @@ a:hover {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
+.serv {
+  padding-top: 180px;
+  padding-bottom: 150px;
+}
+.serv .item {
+  height: 480px !important;
+}
+.serv .item img {
+  height: 280px !important;
+}
 .services .item h6 {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 23px;
   margin-bottom: 15px;
+  /* color: #2b8d89; */
+  font-weight: 600;
+  text-align: center;
 }
 .services .item p {
-  font-size: 14px;
+  font-size: 16px;
+  margin: 2px 20px 10px;
 }
 
 /* ----------------------------------------------------------------
@@ -899,6 +942,9 @@ a:hover {
   overflow: hidden;
   border-radius: 5px;
   overflow: hidden;
+}
+.portfolio .item-img img {
+  height: 250px !important;
 }
 .portfolio .item-img:hover .item-img-overlay {
   opacity: 1;
@@ -1024,7 +1070,7 @@ a:hover {
 .half-header {
   min-height: 65vh;
   margin-top: 95px;
-  background-image: url("/HTML/mental/BEHAVIORAL-HEALTH-RALLY-12_1665419786196_1665419786196_1667054365158_1667054365158.jpg");
+  background-image: url("/mental/BEHAVIORAL-HEALTH-RALLY-12_1665419786196_1665419786196_1667054365158_1667054365158.jpg");
   background-position: right !important;
   background-color: #769d9c;
   background-size: 48% !important;
@@ -1529,7 +1575,7 @@ a:hover {
   color: #ffffff;
 }
 #footer a {
-  color: #ffffff;
+  color: #ffffff !important;
   text-decoration: none !important;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -1666,7 +1712,13 @@ footer p {
     text-align: left;
     width: 60%;
   }
+  .hero .ab {
+    display: none;
+  }
 
+  .hero-img {
+    margin-bottom: 30px;
+  }
   /* .nav-scroll .navbar-collapse .nav-link {
     color: #fff !important;
   } */
@@ -1674,11 +1726,23 @@ footer p {
     color: #c49b66 !important;
   } */
 
-  .header {
-    background-attachment: scroll !important;
-    background-position: 0% 0% !important;
-    padding-left: 20px !important;
-    filter: grayscale(40%);
+  .main { 
+    padding-left: 40px !important;
+  }
+  /* .header .cd-headline::before {
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 13;
+  } */
+  /* .header overlay::before {
+    opacity: 0.4;
+  } */
+  [data-overlay-dark="0"]:before,
+  [data-overlay-light="0"]:before {
+    opacity: 0.2;
+  }
+  [data-overlay-dark]:before {
+    background: rgb(0, 0, 0, 0.4);
   }
   .header .row .mt-50 {
     margin-top: 30px !important;
@@ -1686,10 +1750,14 @@ footer p {
 
   .header .caption h2 {
     font-size: 25px;
+    z-index: 4;
+    position: relative;
   }
   .header .caption h1 {
     font-size: 25px;
     line-height: 1.4;
+    z-index: 4;
+    position: relative;
   }
 
   .about .section-head {
@@ -1711,9 +1779,36 @@ footer p {
   .mb-sm30 {
     margin-bottom: 30px;
   }
+  .section-head {
+    margin-bottom: 50px;
+  }
+  .hero .butn-bg {
+    background: #769d9c;
+  }
+  .hero .butn {
+    margin-left: 25%;
+  }
+  .hero .butn span {
+    color: white !important;
+  }
+  .half-header {
+    background-size: contain !important;
+  }
 
   .section-head h4 {
-    font-size: 30px;
+    font-size: 40px;
+  }
+  .serv .item {
+    height: auto !important;
+  }
+  .services .item {
+    height: auto !important;
+  }
+  .serv .item img {
+    height: 300px !important;
+  }
+  .services .item img {
+    height: 300px !important;
   }
 
   .butn {
@@ -1726,6 +1821,8 @@ footer p {
   .header .caption h1 {
     font-size: 25px;
     line-height: 1.4;
+    z-index: 4;
+    position: relative;
   }
 
   .portfolio .filtering span {
@@ -1739,21 +1836,48 @@ footer p {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 480px) {
+  .posts .post-img img{
+    height: 250px !important;
+  }
+  .d-bloc{
+    display: none;
+  }
   .header {
     margin-top: 80px;
     min-height: 65vh;
+    
   }
-  a {
-    color: #0e7370 !important;
+  .main{
+    background-attachment: scroll !important;
+    background-position: 0% 0% !important;
   }
+
+  .hero-img img {
+    height: 400px !important;
+  }
+  
   .header .caption h2 {
     font-size: 25px;
+    z-index: 4;
+    position: relative;
   }
   .header .caption h1 {
     font-size: 25px;
     line-height: 1.4;
+    z-index: 4;
+    position: relative;
     margin-bottom: 10px !important;
+  }
+  .serv .item {
+    height: auto !important;
+  }
+  .serv .item img {
+    height: 260px !important;
+  }
+  .services .item img {
+    height: 260px !important;
   }
 
   .portfolio .filtering span {

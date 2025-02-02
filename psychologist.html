@@ -26,6 +26,7 @@
     <style>
       .psy {
         background-color: #f8f9fa;
+        /* background-color: #fff; */
         padding-top: 50px;
         padding-bottom: 200px;
       }
@@ -59,6 +60,11 @@
       .start-meeting-btn {
         font-size: 14px;
         padding: 5px 10px;
+      }
+      @media (max-width: 767px) {
+        .psy .section-head {
+          font-size: 33px !important;
+        }
       }
     </style>
   </head>
@@ -128,14 +134,14 @@
     <section class="psy">
       <div class="container section-padding position-re">
         <div class="section-head">
-          <h4 class="text-center section-head">Psychologist Dashboard</h4>
+          <h4 class="text-center section-head">Patients List</h4>
         </div>
 
         <p class="text-center pb-50">Here are your patients:</p>
 
         <!-- Patient List Table -->
-        <div class="table-responsive">
-          <table class="table table-bordered table-hover bg-white">
+        <div class="table-responsive bg-white">
+          <table class="table table-bordered table-hover">
             <thead>
               <tr>
                 <th>Patient Name</th>

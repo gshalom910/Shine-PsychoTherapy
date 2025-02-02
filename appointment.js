@@ -39,7 +39,7 @@ onAuthStateChanged(auth, async (user) => {
       console.log("User data:", userData);
 
       if (userData.role !== "patient") {
-        window.location.href = "index.html"; // Redirect unauthorized users
+        window.location.href = "index1.html"; // Redirect unauthorized users
       } else {
         document.getElementById("body").style.display = "block";
       }
