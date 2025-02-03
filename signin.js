@@ -46,7 +46,7 @@ submit.addEventListener("click", async (event) => {
     const userDoc = await getDoc(doc(db, "users", user.uid));
     if (!userDoc.exists()) {
       console.error("No user data found in Firestore!");
-      alert("User not found. Please contact support.");
+      alert("User not found. Create account Please!");
       return;
     }
 
@@ -75,6 +75,6 @@ submit.addEventListener("click", async (event) => {
     }
   } catch (error) {
     console.error("Error occurred during login:", error);
-    alert(error.message);
+    alert("Please Try Again Using Valid Data");
   }
 });

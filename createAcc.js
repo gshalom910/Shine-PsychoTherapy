@@ -91,6 +91,6 @@ submit.addEventListener("click", async function (event) {
     }
   } catch (error) {
     console.error("Error occurred during signup:", error);
-    alert(error.message);
+    alert("Please Try Again Using Valid Data");
   }
 });

@@ -807,6 +807,7 @@ border-color: #fa5f54f0 !important;
   padding: 50px 20px;
   background: #fff;
   height: 460px !important;
+  margin-bottom: 30px !important;
 }
 .pricing .item:hover .icon {
   color: #fff;
@@ -1755,6 +1756,7 @@ footer p {
     position: relative;
     /* text-align: left; */
     width: 100% !important;
+    margin-top: 50px !important;
   }
   .hero .ab {
     display: none;
@@ -1887,13 +1889,19 @@ footer p {
     padding-bottom: 5px !important;
     font-weight: 600 !important;
   }
+  .pricing .item{
+    height: auto !important;
+  }
+  .nav-link{
+    margin: 0 !important;
+  }
 }
 
 
 @media screen and (max-width: 500px) {
-  .displayName{
+  /* .displayName{
     display: none !important;
-  }
+  } */
   .posts .post-img img{
     height: 250px !important;
   }

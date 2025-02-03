@@ -1,7 +1,7 @@
 const APP_ID = "df3abb91523f4a8c9bf29ed7950f3de9";
 const TOKEN =
-  "007eJxTYFg+/Wrfb4GuRp2kLfq+V/aG2S6QdHdVbd0lucnfr8P05A0FhpQ048SkJEtDUyPjNJNEi2TLpDQjy9QUc0tTgzTjlFTLNO556Q2BjAwHfB8zMEIhiM/M4FSZysAAACB8Hts=";
-const CHANNEL = "Bye";
+  "007eJxTYNgcmnvMUz49yF1UYGvX6VsTWDcvCZcpX5F3Z+dN+ex1uw4pMKSkGScmJVkamhoZp5kkWiRbJqUZWaammFuaGqQZp6RaLk1ekN4QyMgwOdSTmZEBAkF8VoaA4srkfAYGAH5LIFo=";
+const CHANNEL = "Psyco";
 
 const client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
 
