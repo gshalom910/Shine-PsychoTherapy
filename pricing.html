@@ -7,7 +7,7 @@
     <title>Pricing</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
 
     <!-- Google Fonts -->
     <link
@@ -24,11 +24,81 @@
 
     <!-- Core Style Css -->
     <link rel="stylesheet" href="css/style-light.css" />
+    <style>
+      /* Pricing Section Styles */
+
+      /* Pricing Card Styling */
+      .pricing-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      .pricing-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .pricing-title {
+        font-size: 24px !important;
+        /* font-weight: 800 !important; */
+        color: #555;
+        text-align: center !important;
+      }
+
+      .pricing-list {
+        list-style: none;
+        padding: 0;
+        padding-left: 10px;
+        margin-bottom: 15px;
+      }
+
+      .pricing-list li {
+        font-size: 16px;
+        color: #555;
+        padding: 5px 0;
+        text-align: left !important;
+      }
+
+      .pricing-price {
+        font-size: 22px !important;
+        font-weight: 700;
+        color: #ff7a22 !important;
+        margin-top: 10px;
+      }
+
+      /* Book Session Button */
+      a {
+        color: rgb(61, 61, 244) !important;
+        /* color: #fff; */
+        /* border: none; */
+        /* padding: 5px 15px; */
+        font-size: 19px !important;
+        text-align: left !important;
+        /* font-weight: 600; */
+        margin-top: 30px;
+        text-decoration: underline;
+      }
+      .item button {
+        margin-left: 5px !important;
+      }
+
+      .book-btn:hover {
+        background: #388e8e;
+      }
+
+      /* Wave Effect */
+    </style>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg bg-white">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="index.html"
+        ><img class="logo" src="/mental/logo.png" alt="SHINE"
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -89,57 +159,89 @@
       </div>
     </nav>
     <section class="pricing section-padding bg-gray position-re">
-      <div class="container">
+      <div class="container pt-100">
+        <!-- Section Heading -->
         <div class="row">
-          <div class="section-head text-center col-md-12">
-            <h4>Pricing Plan</h4>
+          <div class="section-head text-center col-md-12 mb-80">
+            <h4 class="section-title pb-20">Pricing Plans</h4>
+            <h5 class="section-subtitle">
+              Choose the Best Plan for Your Journey to Better Health
+            </h5>
           </div>
-          <div class="section-head text-center col-md-12 mb-50">
-            <h5>Choose the Best Plan for You</h5>
-          </div>
+        </div>
 
+        <!-- Pricing Options -->
+        <div class="row">
+          <!-- One Time Session -->
           <div class="col-lg-3 col-md-6">
-            <div class="item mb-md50">
-              <h6>Price 1</h6>
-              <p>
-                Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
-                Quisque volutpat
-              </p>
+            <div class="item pricing-card">
+              <h6 class="pricing-title pb-20">One-Time Session</h6>
+              <ul class="pricing-list">
+                <li>One-hour Individual Therapy Session</li>
+                <li>Tailored To Your Needs.</li>
+
+                <li class="pricing-price">380.00 Br</li>
+              </ul>
+              <a href="bookAppointment.html"> Book Session </a>
             </div>
           </div>
 
+          <!-- One to One Session -->
           <div class="col-lg-3 col-md-6">
-            <div class="item mb-md50">
-              <h6>Price 2</h6>
-              <p>
-                Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
-                Quisque volutpat
-              </p>
+            <div class="item pricing-card">
+              <h6 class="pricing-title">One-to-One Session</h6>
+              <ul class="pricing-list">
+                <li>One Month Therapy Session</li>
+                <li>Includes Four 1-hour Sessions.</li>
+                <li>Specialized Self-Resources For Personal Growth.</li>
+                <li class="pricing-price">1,500.00 Br</li>
+              </ul>
+              <a href="bookAppointment.html">Book Session</a>
             </div>
           </div>
 
+          <!-- One to One Session Pro -->
           <div class="col-lg-3 col-md-6">
-            <div class="item mb-sm50">
-              <h6>Price 3</h6>
-              <p>
-                Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
-                Quisque volutpat
-              </p>
+            <div class="item pricing-card">
+              <h6 class="pricing-title">One-to-One Session Pro</h6>
+              <ul class="pricing-list">
+                <li>For Three-months</li>
+                <li>Comprehensive Therapy Experience</li>
+                .
+
+                <li>Group Therapy Sessions</li>
+                <li>Specialized Self-Resources.</li>
+
+                <li class="pricing-price">5,000.00 Br</li>
+              </ul>
+              <a href="bookAppointment.html">Book Session</a>
             </div>
           </div>
 
+          <!-- Special Therapy -->
           <div class="col-lg-3 col-md-6">
-            <div class="item">
-              <h6>Price 4</h6>
-              <p>
-                Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
-                Quisque volutpat
-              </p>
+            <div class="item pricing-card">
+              <h6 class="pricing-title">Special Therapy</h6>
+              <ul class="pricing-list">
+                <li>For Six-months</li>
+                <li>Full Therapeutic Experience.</li>
+                <li>
+                  Includes:
+                  <br />
+                  Individual therapy,
+                </li>
+                <li>Group Therapy, and</li>
+                <li>Skill Development Training.</li>
+
+                <li class="pricing-price">12,000.00 Br</li>
+              </ul>
+              <a href="bookAppointment.html">Book Session</a>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Decorative Wave Shape -->
       <svg
         class="wave"
         version="1.1"
